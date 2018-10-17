@@ -1,0 +1,26 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+
+  <img width="200" alt="OneOrigin Logo" src="./src/app/ui/navbar/img.png"><br>
+  <h5 class="display-4 h4 text-muted">SpotSearch</h5>
+
+
+  <ul class="navbar-nav ml-auto" *ngIf="checkAuth">
+    <li class="nav-item">
+      <a class="nav-link h4" routerLink="/home">Analytics</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link h4" routerLink="/dashboard">Dashboard</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link h4 text-warning" routerLink="/signup">Add User</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link h4">|</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link h4 text-warning" style="cursor:pointer" (click)="onLogout()" routerLink="/login">Logout</a>
+    </li>
+  </ul>
+
+
+</nav>
